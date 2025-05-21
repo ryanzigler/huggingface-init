@@ -3,8 +3,5 @@
 ## Usage
 
 ```bash
-export HF_CLI_TOKEN=<api_token>
-wget https://github.com/ryanzigler/huggingface-init/releases/download/v0.0.1/init.sh -O init.sh
-chmod +x init.sh
-./init.sh
+pushd Downloads && export HF_CLI_TOKEN=REPLACE_ME && git clone https://github.com/ryanzigler/huggingface-init.git hf-init && cd hf-init && chmod +x init.sh && ./init.sh
 ```
